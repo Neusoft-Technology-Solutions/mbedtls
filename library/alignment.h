@@ -29,7 +29,9 @@
  * (and later versions) for Arm v7 and later; all x86 platforms should have
  * efficient unaligned access.
  */
+#ifndef __QNXNTO__ /* disable on QNX */
 #define MBEDTLS_EFFICIENT_UNALIGNED_ACCESS
+#endif
 #endif
 
 /**

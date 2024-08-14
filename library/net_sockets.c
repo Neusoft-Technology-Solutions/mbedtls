@@ -12,7 +12,9 @@
 #define _POSIX_C_SOURCE 200112L
 #endif
 #ifndef _XOPEN_SOURCE
+#ifndef __QNXNTO__
 #define _XOPEN_SOURCE 600 /* sockaddr_storage */
+#endif
 #endif
 
 #include "common.h"
